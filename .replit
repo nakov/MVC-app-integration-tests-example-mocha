@@ -1,1 +1,2 @@
-run = "npm start & npm test"
+run = "npm test"
+# run = "npm start"
