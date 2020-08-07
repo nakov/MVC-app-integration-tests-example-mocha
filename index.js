@@ -11,4 +11,10 @@ let students = require("./models/students-model");
 
 studentsController.setup(app, students);
 
-app.listen(8080);
+app.listen(8080)
+.on('error', function(err) {
+  if (err.errno === 'EADDRINUSE')
+     console.error("Port 8080 busy (server already started).");
+  else 
+    throw err;
+});

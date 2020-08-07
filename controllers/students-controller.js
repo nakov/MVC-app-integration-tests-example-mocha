@@ -18,7 +18,23 @@ function setup(app, students) {
     res.render('add-student', model);
   });
 
+  function paramEmpty(p) {
+    if (typeof(p) != 'string')
+      return true;
+    if (p.trim().length == 0)
+      return true;
+    return false;
+  }
+
   app.post('/add-student', function(req, res) {
+    if (paramEmpty(req.body.name) || paramEmpty(req.body.email) ) {
+      let model = {
+        title: "Add Student", 
+        errMsg: "Cannot add student. Name and email fields are required!"
+      };
+      res.render('add-student', model);
+      return;
+    }
     let student = {
       name: req.body.name,
       email: req.body.email
