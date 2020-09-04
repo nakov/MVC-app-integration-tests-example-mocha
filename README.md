@@ -1,5 +1,7 @@
 # MVC App with Integration Tests
 
+![mocha-tests](https://github.com/nakov/MVC-app-integration-tests-example-mocha/workflows/mocha-tests/badge.svg)
+
 Integration tests of Web MVC app with Mocha.
 
 Live demo at https://repl.it/@nakov/MVC-app-integration-tests-example-mocha
