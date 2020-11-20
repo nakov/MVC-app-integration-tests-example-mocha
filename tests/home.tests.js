@@ -5,12 +5,12 @@ suite('Home page', function() {
   test('Page title', async function() {
     let res = await fetch("http://localhost:8888/");
     let body = await res.text();
-    assert.match(body, /<h1>Students Registry<\/h1>/);
+    assert.ok(body.includes("<h1>Students Registry</h1>"));
   });
   
   test('Students count', async function() {
     let res = await fetch("http://localhost:8888/");
     let body = await res.text();
-    assert.match(body, /Registered students: <b>2<\/b>/);
+    assert.ok(body.includes("Registered students: <b>2</b>"));
   });
 });
