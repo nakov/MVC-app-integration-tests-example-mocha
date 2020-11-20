@@ -1,4 +1,4 @@
-name: mocha-tests
+name: Run Mocha Tests
 on: [ push ]
 jobs:
   build-and-test:
