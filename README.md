@@ -4,6 +4,8 @@
 
 Integration tests of Web MVC app with Mocha.
 
+Production @ Heroku: https://nakov-mvc-node-app.herokuapp.com
+
 Live demo at https://repl.it/@nakov/MVC-app-integration-tests-example-mocha
 
 GitHub: https://github.com/nakov/MVC-app-integration-tests-example-mocha
