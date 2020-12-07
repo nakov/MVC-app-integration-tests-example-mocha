@@ -1,5 +1,5 @@
 function setup(app, students) {
-  app.get('/', function(req, res) {
+  app.get('/home', function(req, res) {
     let model = {
       title: "MVC Example",
       msg: "Students Registry",
