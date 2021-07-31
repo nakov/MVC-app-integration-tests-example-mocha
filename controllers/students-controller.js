@@ -1,7 +1,7 @@
 function setup(app, students) {
   app.get('/', function(req, res) {
     let model = {
-      title: "MVC Example",
+      title: "MVC Example - new",
       msg: "Students Registry",
       students: students
     };
